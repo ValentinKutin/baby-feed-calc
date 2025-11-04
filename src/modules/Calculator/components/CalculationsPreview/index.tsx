@@ -16,6 +16,8 @@ export function CalculationsPreview({ input }: CalculationsPreviewProps) {
     if (nhsInfantFormula) {
       result.push({
         title: "NHS Infant Formula (Guideline Range)",
+        source:
+          "https://111.wales.nhs.uk/livewell/pregnancy/bottleformulacommonquest",
         calculation: nhsInfantFormula,
       });
     }
@@ -33,6 +35,7 @@ export function CalculationsPreview({ input }: CalculationsPreviewProps) {
           title={item.title}
           calculation={item.calculation}
           feedCount={feedCount}
+          source={item.source}
         />
       ))}
     </div>

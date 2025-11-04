@@ -1,0 +1,9 @@
+.calculation_preview_title {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.calculation_preview_title h3 {
+  margin: 0;
+}
