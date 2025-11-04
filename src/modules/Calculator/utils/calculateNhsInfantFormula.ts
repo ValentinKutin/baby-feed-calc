@@ -12,5 +12,6 @@ export function calculateNhsInfantFormula(
   return {
     dailyVolumeMin: +(150 * weightCoefficient).toFixed(0),
     dailyVolumeMax: +(200 * weightCoefficient).toFixed(0),
+    dailyVolumeAverage: +(175 * weightCoefficient).toFixed(0),
   };
 }

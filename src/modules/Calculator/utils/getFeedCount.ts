@@ -1,14 +1,11 @@
+import { FeedCount } from "../types";
+
 const YEAR = 365;
 
 const TWO_WEEKS = 14;
 const oneMonth = Math.floor(YEAR / 12);
 const twoMonths = Math.floor(YEAR / 6);
 const fourMonths = Math.floor(YEAR / 3);
-
-type FeedCount = {
-  min: number;
-  max: number;
-};
 
 export function getFeedCount(age: number): FeedCount {
   if (age < TWO_WEEKS) {
