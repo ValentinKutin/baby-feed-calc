@@ -34,6 +34,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run tests
+        run: npm test --silent
+
       - name: Build
         run: npm run build -- --base=/${{ github.event.repository.name }}/
 
@@ -47,7 +50,7 @@ jobs:
         with:
           path: ./dist
 
-    # Deployment job
+  # Deployment job
   deploy:
     environment:
       name: github-pages
